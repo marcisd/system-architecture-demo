@@ -1,0 +1,19 @@
+{
+  "name": "com.marcisd.modules.remote-variables",
+  "version": "0.0.2",
+  "displayName": "MSD \u2022 Modules \u2022 Remote Variables",
+  "unity": "2020.2",
+  "dependencies": {
+    "com.marcisd.core": "0.0.1",
+    "com.marcisd.core.variables": "0.0.1",
+    "com.unity.remote-config": "3.3.2",
+    "com.unity.services.core": "1.4.0",
+    "com.unity.services.authentication": "2.0.0"
+  },
+  "author": {
+    "name": "Marci San Diego",
+    "email": "marcisandiego@gmail.com",
+    "url": "https://marcisd.com/"
+  },
+  "description": "Extends the Core Variable module to create ScriptableObject variables that gets its value using Unity's Remote Config service."
+}

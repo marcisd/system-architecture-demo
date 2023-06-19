@@ -1,0 +1,15 @@
+{
+  "name": "com.marcisd.core.variables",
+  "version": "0.0.1",
+  "displayName": "MSD \u2022 Core \u2022 Variables",
+  "unity": "2020.2",
+  "author": {
+    "name": "Marci San Diego",
+    "email": "marcisandiego@gmail.com",
+    "url": "https://marcisd.com/"
+  },
+  "description": "Modular variable system utilizing ScriptableObjects.",
+  "dependencies": {
+    "com.marcisd.core": "0.0.1"
+  }
+}
