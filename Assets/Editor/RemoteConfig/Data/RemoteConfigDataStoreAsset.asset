@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: 
+  _rsKeyList: "[\n  {\n    \"metadata\": {\n      \"entityId\": \"2300c3d3-07fc-4caa-8626-1c914b8ba7ed\"\n   
+    },\n    \"rs\": {\n      \"key\": \"sample.intro_message\",\n      \"type\":
+    \"string\",\n      \"value\": \"Hello, this is the intro message in the PRODUCTION
+    environment!\"\n    }\n  }\n]"
+  _rsLastCachedKeyList: "[\n  {\n    \"metadata\": {\n      \"entityId\": \"2300c3d3-07fc-4caa-8626-1c914b8ba7ed\"\n   
+    },\n    \"rs\": {\n      \"key\": \"sample.intro_message\",\n      \"type\":
+    \"string\",\n      \"value\": \"Hello, this is the intro message in the PRODUCTION
+    environment!\"\n    }\n  }\n]"
+  _environments: "[\n  {\n    \"projectId\": \"0e4689bc-63a8-4850-b172-c1007916afc4\",\n   
+    \"name\": \"production\",\n    \"id\": \"06980efc-dbf1-44b8-b9b3-46a7653e0cc5\",\n   
+    \"isDefault\": true,\n    \"createdAt\": \"2023-06-14T15:03:01Z\",\n    \"updatedAt\":
+    \"2023-06-14T15:03:01Z\"\n  },\n  {\n    \"projectId\": \"0e4689bc-63a8-4850-b172-c1007916afc4\",\n   
+    \"name\": \"staging\",\n    \"id\": \"9a8a592e-2c24-4439-a617-c8eb3af1bcbb\",\n   
+    \"isDefault\": false,\n    \"createdAt\": \"2023-06-14T15:04:03Z\",\n    \"updatedAt\":
+    \"2023-06-14T15:04:03Z\"\n  }\n]"

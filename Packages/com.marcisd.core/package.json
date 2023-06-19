@@ -1,0 +1,13 @@
+{
+  "name": "com.marcisd.core",
+  "version": "0.0.1",
+  "displayName": "MSD \u2022 Core",
+  "unity": "2020.2",
+  "keywords": [],
+  "author": {
+    "name": "Marci San Diego",
+    "email": "marcisandiego@gmail.com",
+    "url": "https://marcisd.com/"
+  },
+  "description": "A collection of custom classes, data structures, interfaces, extensions, and more."
+}
