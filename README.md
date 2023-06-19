@@ -13,6 +13,8 @@ The introduction of custom packages in Unity allows us to create loosely-coupled
 When subsystems are created inside their own assemblies, I find that software becomes easily maintainable, documentable, and testable.
 It's easier to establish what its scopes are -- what are the public-facing members versus what information and implementation we keep hidden from its clients.
 
+I also consider core architecture and tooling as my niche. Thus my demo code features packages on that classification.
+
 ## Contents
 
 This project contains some sample scenes and some embedded packages.
