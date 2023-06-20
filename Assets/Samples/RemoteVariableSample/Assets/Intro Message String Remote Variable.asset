@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Intro Message String Remote Variable
   m_EditorClassIdentifier: 
   _developerDescription: Gets the value for the specified key in the configured environment.
-  _remote:
-    _key: sample.intro_message
-    _fallbackValue: Sorry! No message for you!
+  _key: sample.intro_message
+  _fallbackValue: Sorry! No message for you!

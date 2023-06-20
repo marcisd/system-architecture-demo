@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Red Unit Speed
   m_EditorClassIdentifier: 
   _developerDescription: Controls the speed of Red Units
-  _variable:
-    _value: 15.33
+  _value: 20

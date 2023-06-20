@@ -1,4 +1,3 @@
-using System;
 using Unity.Services.RemoteConfig;
 using UnityEngine;
 
@@ -12,19 +11,11 @@ Date:		21/04/2020 18:40
 namespace MSD.Modules.RemoteVariables
 {
     [CreateAssetMenu(menuName = "MSD/Modules/Remote Variables/String")]
-    public sealed class StringRemoteVariable : GenericRemoteVariable<string>
+    public sealed class StringRemoteVariable : RemoteVariable<string>
     {
-        [Serializable]
-        public class StringRemote : RemoteVariable<string>
+        protected override string GetValue(string key)
         {
-            protected override string GetValue(string key)
-            {
-                return RemoteConfigService.Instance.appConfig.GetString(key);
-            }
+            return RemoteConfigService.Instance.appConfig.GetString(key);
         }
-
-        [SerializeField] private StringRemote _remote;
-
-        protected override RemoteVariable<string> Remote => _remote;
     }
 }

@@ -1,37 +1,32 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*===============================================================
-Project:	Core Library
-Developer:	Marci San Diego
-Company:	Personal - marcisandiego@gmail.com
-Date:       06/11/2018 15:39
-===============================================================*/
-
 namespace MSD
 {
-    [Serializable]
-    public class Variable<T> : IValueChangeObservable<T>
+    public abstract class Variable<T> : CustomVariable<T>,
+        IValueChangeObservable<T>,
+        IValueChangeObservable
     {
         [SerializeField] private T _value = default;
 
         [field: NonSerialized] private T RuntimeValue { get; set; } = default;
 
         public event Action<T> OnValueChanged = delegate { };
-        
-        public T Value
-        {
-            get => RuntimeValue;
-            set => SetValue(value);
-        }
 
-        public void SetValue(T value)
+        private event Action NonGenericOnValueChanged = delegate { };
+
+        protected override bool IsReadonly => false;
+        
+        protected override T GetValue() => RuntimeValue;
+
+        protected override void SetValue(T value)
         {
             if (!EqualityComparer<T>.Default.Equals(RuntimeValue, value))
             {
                 RuntimeValue = value;
-                OnValueChanged?.Invoke(RuntimeValue);
+                OnValueChanged.Invoke(RuntimeValue);
+                NonGenericOnValueChanged.Invoke();
             }
         }
 
@@ -43,6 +38,17 @@ namespace MSD
         public void Reset()
         {
             RuntimeValue = _value;
+        }
+
+        public void OnValidate()
+        {
+            Reset();
+        }
+
+        event Action IValueChangeObservable.OnValueChanged
+        {
+            add => NonGenericOnValueChanged += value;
+            remove => NonGenericOnValueChanged -= value;
         }
     }
 }

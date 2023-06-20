@@ -10,7 +10,6 @@ Date:       06/11/2018 15:41
 
 namespace MSD
 {
-    [Serializable]
     public abstract class GenericReference<TValue, TCustomVariable> : ISerializationCallbackReceiver
         where TCustomVariable : CustomVariable<TValue>
     {

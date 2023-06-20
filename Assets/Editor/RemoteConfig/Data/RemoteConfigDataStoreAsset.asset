@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\n  {\n    \"metadata\": {\n      \"entityId\": \"2300c3d3-07fc-4caa-8626-1c914b8ba7ed\"\n   
+  _rsKeyList: "[\n  {\n    \"metadata\": {\n      \"entityId\": \"ca965942-b0ae-4fc4-af16-64109aa6ebdf\"\n   
     },\n    \"rs\": {\n      \"key\": \"sample.intro_message\",\n      \"type\":
     \"string\",\n      \"value\": \"Hello, this is the intro message in the PRODUCTION
     environment!\"\n    }\n  }\n]"
-  _rsLastCachedKeyList: "[\n  {\n    \"metadata\": {\n      \"entityId\": \"2300c3d3-07fc-4caa-8626-1c914b8ba7ed\"\n   
+  _rsLastCachedKeyList: "[\n  {\n    \"metadata\": {\n      \"entityId\": \"ca965942-b0ae-4fc4-af16-64109aa6ebdf\"\n   
     },\n    \"rs\": {\n      \"key\": \"sample.intro_message\",\n      \"type\":
     \"string\",\n      \"value\": \"Hello, this is the intro message in the PRODUCTION
     environment!\"\n    }\n  }\n]"

@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Blue Unit Speed
   m_EditorClassIdentifier: 
   _developerDescription: Controls the speed of Blue Units
-  _variable:
-    _value: 29.7
+  _value: 40
